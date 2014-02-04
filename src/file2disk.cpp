@@ -1,8 +1,10 @@
+// Copyright 2011 Rustem Valeev <r-green@mail.ru>
+
 //#define TRACE_H
 #include "include/main.h"
 #include "include/io.h"
 #include <iostream>
-#include <iomanip> 
+#include <iomanip>
 
 #include "fs.h"
 #include "fd.h"
