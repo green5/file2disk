@@ -1,11 +1,14 @@
 file2disk
 =========
 
-Map flash file to partition
+Map flash file to partition (generally disk matryoshka)
 
 0. make fat32 on flash disk (16G usually), labelit myFlash, assume /dev/sdb1, format it
 1. dd if=/dev/zero of=/media/myFlash/LINUX.IMG count=4 bs=1G
 2. mkfs.ext3 -L Linux /media/myFlash/LINUX.IMG
+
+or use grub, syslinux flash
+
 3. file2disk /media/myFlash/LINUX.IMG -A1 (create second active partition)
 3.1 file2disk /dev/sdb someBoot.img (not done)
 4. eject/inject flash disk
