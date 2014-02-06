@@ -1,7 +1,8 @@
 file2disk
 =========
 
-Map flash file to partition (generally disk matryoshka)
+Map flash file to partition (file-disk matryoshka)
+Why: You want test new OS and dont have enough disk space. Simply create file on disk and test it.
 
 0. make fat32 on flash disk (16G usually), labelit myFlash, assume /dev/sdb1, format it
 1. dd if=/dev/zero of=/media/myFlash/LINUX.IMG count=4 bs=1G
