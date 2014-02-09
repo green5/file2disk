@@ -47,4 +47,6 @@ History:
 05.02.2014: first release.
 
 Problems:
-Check disk is flash and really fat32.
+1. Check disk is flash and really fat32.
+2. ntfs, ext3 ...
+3. 
